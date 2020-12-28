@@ -1,5 +1,6 @@
 {% extends 'base.html' %}
 
+{% block title %} | Home   {% endblock %}
 {% block content %}
 
 {% load humanize %}
@@ -180,7 +181,7 @@
                                 <li>{{car.fuel_type}}</li>
                                 <li>{{car.miles | intcomma }}</li>
                                 <li>{{car.transmission}}</li>
-                                <li>{{body_style}}</li>
+                                <li>{{car.body_style}}</li>
                                 <li>{{car.color}}</li>
                                 <li>{{car.year}}</li>
                             </ul>
